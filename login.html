@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="rtl" id="page-top">
+	<section class="login-header" style="padding: 0;">
+		<div class="container-fluid">
+			<div class="row row-main">
+				<div class="col-lg-6 login-right"> 
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="d-none d-sm-none d-md-block" style="height: 80px;"></div>
+							<div class="d-block d-sm-block d-md-none" style="height: 20px;"></div>
+							<a href="#"><img class="login-page-logo header-auth" src="images/logo.png"></a>
+						</div>
+					</div>
+					<div class="login-page-div"></div>
+					<div class="login-form">
+						<form method="POST">
+							<div class="form-group">
+								<label for="user_name" class="form_label">E-mail: *</label>
+								<input type="email" class="form-control form_input" id="login_email" name="login_email" required="required">
+								<input type="hidden" id="g-recaptcha-response" name="g-recaptchacaptcha-response" value="03AGdBq25fsI5vVEamIX0lM-ntCbwWBFcdQKiS4apa0MsKYifiVyoTLCzwYSgXfsdLeHjeD6eNdsqjsDrBj6a2hMa69I5H843I7mRoO34mV_nYYhi2Mtx_hJDGb3KkXSdaqCJYPCvuJRMoFNSQ9jODzRgkZGVGFO13MEm9MsP0cxMdfaC_e7511KfQXy7V2G3sjQoq9eDEifWrTVktWaZRJuDcTllRw7v5i8ktQqDeG9s4c_xZkyEqSn6G4DKqWbZSRlBFKtDMBOYEPwzP0iGhSoud_P_eGl8n2wteMkfhS1zDyJxdNFpGe7YrD1v2-cWqahIglbjLi0vABa9R-DiwcY4E6yeqXw_D1E3hGqAptbqmEgQ2oCKtRnmwYtl0DNfxxykI9E9xwnkZpQzsLAyNqrzxSR8sP0ZTg1repIWgkKsa8WiZCAQWowdh12yofvUQ9KBmd-WJ_ILtu3jk4YU_Yl9Hp-Aal3rQWA">
+								<input type="hidden" id="action_login" name="action_login"> </div>
+							<div class="form-group">
+								<label for="user_password" class="form_label">password: *
+</label> <small id="emailHelp" class="forgot-link-txt text-muted"><a class="forgot-links" href="forgotpassword.html">I forgot
+</a></small>
+								<div class="input-group">
+									<input type="password" class="form-control form_input" name="login_password" id="login_password">
+									<div id="jb-password-toggle" style="cursor:pointer" class="input-group-append" data-present-mode="show-pass"> <span id="jb-pas-show" style="justify-content:center; border-radius: 0; background-color: #efefef; display: flex; min-width: 60px;" class="input-group-text"><i class="far fa-eye"></i>&nbsp;show
+</span> 
+</div>
+								</div>
+							</div>
+							<div class="form-group form-check">
+								<input type="checkbox" name="remember" class="form-check-input" id="keep_login" style="cursor: pointer;">
+								<label class="form-check-label form_label" for="keep_login"> Save password
+
+</label>
+							</div>
+							<button type="submit" class="form_submit_btn">sign in
+</button>
+							<div style="height: 40px;"></div>
+							<div class="row">
+								<div class="col-lg-12">
+									<p style="font-weight: 600;text-align: center;font-size: 16px;margin-bottom: 5px;">Don't have an account?
+</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12"> <a class="signup_link" href="register.html">Create an account
+</a> </div>
+							</div>
+						</form>
+						
+						
+
+					</div>
+				</div>
+				<div class="col-lg-6 d-none d-sm-none d-md-block"> <img id="common-slider" style="width: auto;height: 100%;object-fit: cover;max-width: 100%;" src="images/login_header.jpg"> </div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jubna.com/dashboard/en/vendor/jquery/jquery.min.js"></script>
+	<script src="https://cdn.jubna.com/dashboard/en/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Plugin JavaScript -->
+	<script src="https://cdn.jubna.com/dashboard/en/vendor/jquery-easing/jquery.easing.min.js"></script>
+	<!-- Custom scripts for this template -->
+	<script src="https://cdn.jubna.com/dashboard/en/js/jubna_landing.js"></script>
+		
+	<!-- Login Page Css Starts -->
+	<script type="text/javascript">
+	$("#jb-password-toggle").click(function() {
+		let _this = $(this);
+		let presentMode = _this.data("present-mode");
+		if(presentMode == "show-pass") { //Show Password
+			_this.data("present-mode", "hide-pass"); //Set next action
+			$("#login_password").attr("type", "text");
+			$("#jb-pas-show").hide();
+			$("#jb-pas-hide").css("display", "flex");
+		} else if(presentMode == "hide-pass") { //Hide Password
+			_this.data("present-mode", "show-pass"); ////Set next action
+			$("#login_password").attr("type", "password");
+			$("#jb-pas-hide").hide();
+			$("#jb-pas-show").css("display", "flex");
+		}
+	});
+	</script>
+	<!-- Login Page Css Starts -->
+
+</body>
+</html>
+
